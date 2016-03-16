@@ -29,9 +29,9 @@
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="50sp"
                 android:paddingRight="2dp"
-                android:text="Unesite ugovorenu neto naknadu"
+                android:text="Unesite ugovorenu &#10;neto naknadu:"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textSize="16sp" />
 
@@ -40,7 +40,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="numberDecimal" />
+                android:inputType="numberDecimal"
+                android:maxLength="12"
+                android:layout_marginTop="12sp" />
 
         </LinearLayout>
 
@@ -101,25 +103,160 @@
 
             <EditText
                 android:id="@+id/brutoPrihod"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:editable="false"
                 android:ems="10"
                 android:focusable="false"
                 android:inputType="none" />
         </LinearLayout>
 
+        <LinearLayout
+            android:id="@+id/normiraniLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/brutoLayout"
+            android:layout_marginBottom="12dp"
+            android:orientation="horizontal"
+            android:paddingRight="2dp">
 
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Normirani troskovi"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/normiraniTroskovi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:focusable="false"
+                android:inputType="none" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/oporeziviLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/normiraniLayout"
+            android:layout_marginBottom="12dp"
+            android:orientation="horizontal"
+            android:paddingRight="2dp">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Oporezivi prihod"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/oporeziviPrihod"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:focusable="false"
+                android:inputType="none" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/porezLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/oporeziviLayout"
+            android:layout_marginBottom="12dp"
+            android:orientation="horizontal"
+            android:paddingRight="2dp">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Porez na dohodak gradjana"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/porezNaDohodak"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:focusable="false"
+                android:inputType="none" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pioLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/porezLayout"
+            android:layout_marginBottom="12dp"
+            android:orientation="horizontal"
+            android:paddingRight="2dp">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Doprinos za PIO"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/doprinosZaPio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:focusable="false"
+                android:inputType="none" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/zdravstvenoLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/pioLayout"
+            android:layout_marginBottom="12dp"
+            android:orientation="horizontal"
+            android:paddingRight="2dp">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="50sp"
+                android:text="Doprinos za zdravstveno &#10;osiguranje"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/doprinosZaZdravstveno"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:focusable="false"
+                android:inputType="none"
+                android:layout_marginTop="12sp" />
+        </LinearLayout>
 
         <Button
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/brutoLayout"
-            android:layout_marginTop="300dp"
+            android:layout_below="@id/zdravstvenoLayout"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30sp"
             android:onClick="btnClick"
-            android:text="Obracun" />
+            android:text="Obracun"
+            android:layout_marginRight="30sp" />
 
     </RelativeLayout>
 </ScrollView>
