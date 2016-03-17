@@ -2,8 +2,8 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:fillViewport="false"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -15,7 +15,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:paddingLeft="0dp">
 
 
@@ -41,7 +41,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="numberDecimal"
-                android:maxLength="12"
+                android:maxLength="9"
                 android:layout_marginTop="12sp" />
 
         </LinearLayout>
@@ -50,10 +50,9 @@
             android:id="@+id/checkLayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
+
             android:layout_below="@id/netoLayout"
-            android:layout_centerVertical="true"
+
             android:layout_marginBottom="12dp"
             android:layout_marginLeft="0dp"
             android:layout_marginStart="0dp"
@@ -62,7 +61,8 @@
             <RadioGroup
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                >
 
                 <RadioButton
                     android:id="@+id/radioBtnNezaposlen"
@@ -107,8 +107,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:focusable="false"
-                android:inputType="none" />
+                android:inputType="numberDecimal" />
         </LinearLayout>
 
         <LinearLayout
@@ -134,8 +133,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:focusable="false"
-                android:inputType="none" />
+                android:inputType="numberDecimal" />
         </LinearLayout>
 
         <LinearLayout
@@ -161,8 +159,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:focusable="false"
-                android:inputType="none" />
+                android:inputType="numberDecimal" />
         </LinearLayout>
 
         <LinearLayout
@@ -188,8 +185,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:focusable="false"
-                android:inputType="none" />
+                android:inputType="numberDecimal" />
         </LinearLayout>
 
         <LinearLayout
@@ -215,8 +211,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:focusable="false"
-                android:inputType="none" />
+                android:inputType="numberDecimal" />
         </LinearLayout>
 
         <LinearLayout
@@ -242,8 +237,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:focusable="false"
-                android:inputType="none"
+                android:inputType="numberDecimal"
                 android:layout_marginTop="12sp" />
         </LinearLayout>
 
@@ -257,6 +251,42 @@
             android:onClick="btnClick"
             android:text="Obracun"
             android:layout_marginRight="30sp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/button"
+            android:layout_marginTop="30sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Trenutni koeficijenti&#10;u procentima:"
+                android:id="@+id/textView8"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#7f0909">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/koeficijentiProcenti"
+                    android:layout_weight="1"
+                    android:focusable="false"
+                    android:textSize="16sp"
+                    android:inputType="none"
+                    android:textColor="#f1ee3e" />
+            </LinearLayout>
+        </LinearLayout>
 
     </RelativeLayout>
 </ScrollView>

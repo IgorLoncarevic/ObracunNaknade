@@ -78,7 +78,92 @@
                 android:ems="10"
                 android:inputType="numberDecimal"
                 android:maxLength="12"
-                android:text="0.2" />
+                android:text="0.26" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/treci"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_below="@id/drugi">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="50sp"
+                android:paddingRight="2dp"
+                android:text="Unesite doprinos za &#10;zdravstveno osiguranje:"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/koeficijentTreci"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12sp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:maxLength="12"
+                android:text="0.103" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cetvrti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_below="@id/treci">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="50sp"
+                android:paddingRight="2dp"
+                android:text="Unesite koeficijent za &#10;preracun (nezaposleni):"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/koeficijentPreracunNez"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12sp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:text="1.819505095" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/peti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_below="@id/cetvrti">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="50sp"
+                android:paddingRight="2dp"
+                android:text="Unesite koeficijent za &#10;preracun (zaposleni):"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/koeficijentPreracunZap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12sp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:text="1.582278481" />
 
         </LinearLayout>
 
@@ -87,9 +172,45 @@
             android:layout_height="wrap_content"
             android:text="Sacuvaj"
             android:id="@+id/button2"
-            android:layout_below="@id/hint"
-            android:layout_marginTop="200sp"
-            android:onClick="saveInfo" />
+            android:layout_below="@id/peti"
+            android:layout_marginTop="20sp"
+            android:onClick="saveInfo"
+            android:layout_alignParentRight="true"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/peti"
+            android:layout_marginTop="20sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Vrati koeficijente na&#10;pocetne vrednosti:"
+                android:id="@+id/textView9"
+                android:textSize="16sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="default"
+                android:id="@+id/button3"
+                android:layout_marginLeft="12sp"
+                android:onClick="onClickDefault" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:id="@+id/imageButton"
+            android:src="@drawable/arrows"
+            android:adjustViewBounds="true"
+            android:layout_below="@id/button2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30sp"
+            android:onClick="onClickNazad" />
 
 
     </RelativeLayout>
