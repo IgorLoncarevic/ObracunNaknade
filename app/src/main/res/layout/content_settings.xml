@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.aperslajsgmail.obracunnaknade.SettingsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Ovde unesite koeficijente kojima se mnozi oporezivi prihod. Na primer, ako je doprinos za PIO 26%, unesite 0.26 u odgovarajuce polje."
+            android:id="@+id/hint"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/prvi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_below="@id/hint">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="50sp"
+                android:paddingRight="2dp"
+                android:text="Unesite porez na &#10;dohodak gradjana:"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/koeficijentPrvi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12sp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:maxLength="12"
+                android:text="0.2" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sacuvaj"
+            android:id="@+id/button2"
+            android:layout_below="@id/hint"
+            android:layout_marginTop="200sp"
+            android:onClick="saveInfo" />
+
+
+    </RelativeLayout>
+</ScrollView>
