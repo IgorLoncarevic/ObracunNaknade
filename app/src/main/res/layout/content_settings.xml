@@ -53,6 +53,35 @@
 
         </LinearLayout>
 
+        <LinearLayout
+            android:id="@+id/drugi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_below="@id/prvi">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="50sp"
+                android:paddingRight="2dp"
+                android:text="Unesite doprinos &#10;za PIO:"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/koeficijentDrugi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12sp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:maxLength="12"
+                android:text="0.2" />
+
+        </LinearLayout>
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
