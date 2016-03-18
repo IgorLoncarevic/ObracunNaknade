@@ -263,7 +263,7 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="40sp"
+            android:layout_height="50sp"
             android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
@@ -276,7 +276,8 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/procentiTxt"
                 android:id="@+id/textView8"
-                android:textSize="16sp" />
+                android:textSize="14sp"
+                android:layout_marginRight="8sp" />
 
             <LinearLayout
                 android:orientation="horizontal"
@@ -286,13 +287,14 @@
 
                 <EditText
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:id="@+id/koeficijentiProcenti"
                     android:layout_weight="1"
                     android:focusable="false"
-                    android:textSize="16sp"
+                    android:textSize="12sp"
                     android:inputType="none"
-                    android:textColor="#f1ee3e" />
+                    android:textColor="#f1ee3e"
+                    android:textStyle="bold" />
             </LinearLayout>
         </LinearLayout>
 

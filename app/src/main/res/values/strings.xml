@@ -1,39 +1,41 @@
 <resources>
-    <string name="app_name">"Obracun Naknade "</string>
-    <string name="action_settings">Podesavanja</string>
+    <string name="app_name">"Obračun Naknade "</string>
+    <string name="action_settings">Podešavanja</string>
     <string name="radioBtnNezaposlen">Nezaposleno lice</string>
     <string name="radioBtnZaposlen">Zaposleno lice</string>
-    <string name="title_activity_settings">Podesavanja</string>
+    <string name="title_activity_settings">Podešavanja</string>
 
 
 
     <string name="netoTxt">Unesite ugovorenu \nneto naknadu:</string>
     <string name="brutoTxt">Bruto prihod</string>
-    <string name="normiraniTxt">Normirani troskovi</string>
+    <string name="normiraniTxt">Normirani troškovi</string>
     <string name="oporeziviTxt">Oporezivi prihod</string>
-    <string name="porezTxt">Porez na dohodak gradjana</string>
+    <string name="porezTxt">Porez na dohodak građana</string>
     <string name="pioTxt">Doprinos za PIO</string>
     <string name="zdravstvenoTxt">Doprinos za zdravstveno \nosiguranje</string>
     <string name="procentiTxt">Trenutni koeficijenti\nu procentima:</string>
-    <string name="obracunBtn">Obracun</string>
+    <string name="obracunBtn">Obračun</string>
 
 
     <string name="dodaj">, %1$s</string>
-    <string name="obavestenjeTxt">Ovde unesite koeficijente kojima se mnozi oporezivi prihod. Na primer, ako je doprinos za PIO 26%, unesite 0.26 u odgovarajuce polje.</string>
-    <string name="normiraniSetTxt">Unesite koeficijent za \nnormirane troskove:</string>
+    <string name="obavestenjeTxt">Ovde unesite koeficijente kojima se množi oporezivi prihod. Na primer, ako je doprinos za PIO 26%, unesite 0.26 u odgovarajuće polje.</string>
+    <string name="normiraniSetTxt">Unesite koeficijent za \nnormirane troškove:</string>
     <string name="porezSettTxt">Unesite koeficijent za\nporez na dohodak:</string>
     <string name="pioSettTxt">Unesite koeficijent\nza doprinos za PIO:</string>
     <string name="zdravstvenoSettTxt">Unesite koeficijent za \ndoprinos za zdravstveno:</string>
-    <string name="nezaposleniSettTxt">Unesite koeficijent za \npreracun (nezaposleni):</string>
-    <string name="zaposleniSettTxt">Unesite koeficijent za \npreracun (zaposleni):</string>
-    <string name="defaultSettTxt">Vrati koeficijente na\npocetne vrednosti:</string>
+    <string name="nezaposleniSettTxt">Unesite koeficijent za \npreračun (nezaposleni):</string>
+    <string name="zaposleniSettTxt">Unesite koeficijent za \npreračun (zaposleni):</string>
+    <string name="defaultSettTxt">Vrati koeficijente na\npočetne vrednosti:</string>
     <string name="defaultBtn">default</string>
-    <string name="sacuvajBtn">sacuvaj</string>
+    <string name="sacuvajBtn">sačuvaj</string>
     <string name="porezSettEdit">0.2</string>
     <string name="pioSettEdit">0.26</string>
     <string name="zdravstvenoSettEdit">0.103</string>
     <string name="nezaposleniSettEdit">1.819505095</string>
     <string name="zaposleniSettEdit">1.582278481</string>
+    <string name="normiraniSettEdit">0.2</string>
+
 
     <string name="dinari">0.00 rsd</string>
 </resources>
