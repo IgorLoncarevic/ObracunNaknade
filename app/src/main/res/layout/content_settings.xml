@@ -13,31 +13,31 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
 
         <TextView
+            android:id="@+id/hint"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="@string/obavestenjeTxt"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Ovde unesite koeficijente kojima se mnozi oporezivi prihod. Na primer, ako je doprinos za PIO 26%, unesite 0.26 u odgovarajuce polje."
-            android:id="@+id/hint"
             android:textSize="16sp" />
 
         <LinearLayout
             android:id="@+id/prvi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@id/hint"
             android:layout_marginBottom="12dp"
-            android:layout_marginTop="12dp"
-            android:layout_below="@id/hint">
+            android:layout_marginTop="12dp">
 
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="50sp"
                 android:paddingRight="2dp"
-                android:text="Unesite porez na &#10;dohodak gradjana:"
+                android:text="@string/porezSettTxt"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textSize="16sp" />
 
@@ -49,7 +49,7 @@
                 android:ems="10"
                 android:inputType="numberDecimal"
                 android:maxLength="12"
-                android:text="0.2" />
+                android:text="@string/porezSettEdit" />
 
         </LinearLayout>
 
@@ -57,16 +57,16 @@
             android:id="@+id/drugi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@id/prvi"
             android:layout_marginBottom="12dp"
-            android:layout_marginTop="12dp"
-            android:layout_below="@id/prvi">
+            android:layout_marginTop="12dp">
 
             <TextView
                 android:id="@+id/textView1"
                 android:layout_width="wrap_content"
                 android:layout_height="50sp"
                 android:paddingRight="2dp"
-                android:text="Unesite doprinos &#10;za PIO:"
+                android:text="@string/pioSettTxt"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textSize="16sp" />
 
@@ -78,7 +78,7 @@
                 android:ems="10"
                 android:inputType="numberDecimal"
                 android:maxLength="12"
-                android:text="0.26" />
+                android:text="@string/pioSettEdit" />
 
         </LinearLayout>
 
@@ -86,16 +86,16 @@
             android:id="@+id/treci"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@id/drugi"
             android:layout_marginBottom="12dp"
-            android:layout_marginTop="12dp"
-            android:layout_below="@id/drugi">
+            android:layout_marginTop="12dp">
 
             <TextView
                 android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="50sp"
                 android:paddingRight="2dp"
-                android:text="Unesite doprinos za &#10;zdravstveno osiguranje:"
+                android:text="@string/zdravstvenoSettTxt"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textSize="16sp" />
 
@@ -107,7 +107,7 @@
                 android:ems="10"
                 android:inputType="numberDecimal"
                 android:maxLength="12"
-                android:text="0.103" />
+                android:text="@string/zdravstvenoSettEdit" />
 
         </LinearLayout>
 
@@ -115,16 +115,16 @@
             android:id="@+id/cetvrti"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@id/treci"
             android:layout_marginBottom="12dp"
-            android:layout_marginTop="12dp"
-            android:layout_below="@id/treci">
+            android:layout_marginTop="12dp">
 
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="wrap_content"
                 android:layout_height="50sp"
                 android:paddingRight="2dp"
-                android:text="Unesite koeficijent za &#10;preracun (nezaposleni):"
+                android:text="@string/nezaposleniSettTxt"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textSize="16sp" />
 
@@ -135,7 +135,7 @@
                 android:layout_marginTop="12sp"
                 android:ems="10"
                 android:inputType="numberDecimal"
-                android:text="1.819505095" />
+                android:text="@string/nezaposleniSettEdit" />
 
         </LinearLayout>
 
@@ -143,16 +143,16 @@
             android:id="@+id/peti"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@id/cetvrti"
             android:layout_marginBottom="12dp"
-            android:layout_marginTop="12dp"
-            android:layout_below="@id/cetvrti">
+            android:layout_marginTop="12dp">
 
             <TextView
                 android:id="@+id/textView4"
                 android:layout_width="wrap_content"
                 android:layout_height="50sp"
                 android:paddingRight="2dp"
-                android:text="Unesite koeficijent za &#10;preracun (zaposleni):"
+                android:text="@string/zaposleniSettTxt"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textSize="16sp" />
 
@@ -163,54 +163,54 @@
                 android:layout_marginTop="12sp"
                 android:ems="10"
                 android:inputType="numberDecimal"
-                android:text="1.582278481" />
+                android:text="@string/zaposleniSettEdit" />
 
         </LinearLayout>
 
         <Button
+            android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sacuvaj"
-            android:id="@+id/button2"
+            android:layout_alignParentRight="true"
             android:layout_below="@id/peti"
             android:layout_marginTop="20sp"
             android:onClick="saveInfo"
-            android:layout_alignParentRight="true"/>
+            android:text="@string/sacuvajBtn" />
 
         <LinearLayout
-            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@id/peti"
-            android:layout_marginTop="20sp">
+            android:layout_marginTop="20sp"
+            android:orientation="horizontal">
 
             <TextView
+                android:id="@+id/textView9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="@string/defaultSettTxt"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Vrati koeficijente na&#10;pocetne vrednosti:"
-                android:id="@+id/textView9"
                 android:textSize="16sp" />
 
             <Button
+                android:id="@+id/button3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="default"
-                android:id="@+id/button3"
                 android:layout_marginLeft="12sp"
-                android:onClick="onClickDefault" />
+                android:onClick="onClickDefault"
+                android:text="@string/defaultBtn" />
         </LinearLayout>
 
         <ImageView
+            android:id="@+id/imageButton"
             android:layout_width="40sp"
             android:layout_height="40sp"
-            android:id="@+id/imageButton"
-            android:src="@drawable/arrows"
-            android:adjustViewBounds="true"
             android:layout_below="@id/button2"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="30sp"
-            android:onClick="onClickNazad" />
+            android:adjustViewBounds="true"
+            android:onClick="onClickNazad"
+            android:src="@drawable/arrows" />
 
 
     </RelativeLayout>
