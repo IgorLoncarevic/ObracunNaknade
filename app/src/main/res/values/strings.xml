@@ -20,9 +20,10 @@
 
     <string name="dodaj">, %1$s</string>
     <string name="obavestenjeTxt">Ovde unesite koeficijente kojima se mnozi oporezivi prihod. Na primer, ako je doprinos za PIO 26%, unesite 0.26 u odgovarajuce polje.</string>
-    <string name="porezSettTxt">Unesite porez na \ndohodak gradjana:</string>
-    <string name="pioSettTxt">Unesite doprinos \nza PIO:</string>
-    <string name="zdravstvenoSettTxt">Unesite doprinos za \nzdravstveno osiguranje:</string>
+    <string name="normiraniSetTxt">Unesite koeficijent za \nnormirane troskove:</string>
+    <string name="porezSettTxt">Unesite koeficijent za\nporez na dohodak:</string>
+    <string name="pioSettTxt">Unesite koeficijent\nza doprinos za PIO:</string>
+    <string name="zdravstvenoSettTxt">Unesite koeficijent za \ndoprinos za zdravstveno:</string>
     <string name="nezaposleniSettTxt">Unesite koeficijent za \npreracun (nezaposleni):</string>
     <string name="zaposleniSettTxt">Unesite koeficijent za \npreracun (zaposleni):</string>
     <string name="defaultSettTxt">Vrati koeficijente na\npocetne vrednosti:</string>
@@ -33,4 +34,6 @@
     <string name="zdravstvenoSettEdit">0.103</string>
     <string name="nezaposleniSettEdit">1.819505095</string>
     <string name="zaposleniSettEdit">1.582278481</string>
+
+    <string name="dinari">0.00 rsd</string>
 </resources>

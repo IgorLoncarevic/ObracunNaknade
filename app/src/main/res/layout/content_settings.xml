@@ -25,10 +25,39 @@
             android:textSize="16sp" />
 
         <LinearLayout
-            android:id="@+id/prvi"
+            android:id="@+id/nulti"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/hint"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:id="@+id/textView0"
+                android:layout_width="wrap_content"
+                android:layout_height="50sp"
+                android:paddingRight="2dp"
+                android:text="@string/normiraniSetTxt"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/koeficijentNulti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12sp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:maxLength="12"
+                android:text="@string/porezSettEdit" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/prvi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nulti"
             android:layout_marginBottom="12dp"
             android:layout_marginTop="12dp">
 
@@ -167,22 +196,13 @@
 
         </LinearLayout>
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_below="@id/peti"
-            android:layout_marginTop="20sp"
-            android:onClick="saveInfo"
-            android:text="@string/sacuvajBtn" />
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@id/peti"
             android:layout_marginTop="20sp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:id="@+id/sesti">
 
             <TextView
                 android:id="@+id/textView9"
@@ -190,27 +210,43 @@
                 android:layout_height="wrap_content"
                 android:text="@string/defaultSettTxt"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:layout_marginBottom="20sp" />
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/defBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="12sp"
+                android:layout_marginLeft="8sp"
                 android:onClick="onClickDefault"
-                android:text="@string/defaultBtn" />
+                android:text="@string/defaultBtn"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8sp" />
+
         </LinearLayout>
 
         <ImageView
             android:id="@+id/imageButton"
             android:layout_width="40sp"
             android:layout_height="40sp"
-            android:layout_below="@id/button2"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="30sp"
+            android:layout_below="@id/sesti"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="12sp"
             android:adjustViewBounds="true"
             android:onClick="onClickNazad"
-            android:src="@drawable/arrows" />
+            android:src="@drawable/arrows"
+            android:layout_marginLeft="20sp" />
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="saveInfo"
+            android:text="@string/sacuvajBtn"
+            android:layout_alignBottom="@+id/imageButton"
+            android:layout_alignRight="@+id/drugi"
+            android:layout_alignEnd="@+id/drugi"
+            android:layout_marginRight="20sp" />
 
 
     </RelativeLayout>
